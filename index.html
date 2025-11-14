@@ -1,122 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>France Telugu Students</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Telugu Students | Study Guide & Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Tailwind Configuration (Optional: To define a color palette or specific fonts) */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#003366', /* Deep Navy/Education Blue */
+                        'secondary-blue': '#1e90ff', /* Dodger Blue/French Accent */
+                        'bg-gradient-start': '#003366',
+                        'bg-gradient-end': '#1a4f8a',
+                    },
+                }
+            }
+        }
+        /* Custom scroll-padding for sticky header */
+        html {
+            scroll-padding-top: 5rem;
+        }
+    </style>
 </head>
 
-<body class="bg-slate-50 text-slate-900">
+<body class="font-sans text-gray-800 bg-gray-50">
 
-  <header class="sticky top-0 bg-white/90 backdrop-blur border-b border-slate-200 z-30">
-    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <div class="h-9 w-9 bg-sky-500 text-white rounded-xl flex items-center justify-center font-bold">FT</div>
-        <span class="font-semibold">France Telugu Students</span>
-      </div>
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-primary-blue hover:text-secondary-blue transition duration-300">🇫🇷 France Telugu Students</a>
+            <div class="hidden lg:flex space-x-6 text-sm font-medium">
+                <a href="#about" class="text-gray-600 hover:text-secondary-blue transition duration-200">About</a>
+                <a href="#guidelines" class="text-gray-600 hover:text-secondary-blue transition duration-200">Guidelines</a>
+                <a href="#guide" class="text-gray-600 hover:text-secondary-blue transition duration-200">Step-by-Step Guide</a>
+                <a href="#join" class="text-gray-600 hover:text-secondary-blue transition duration-200">Join & Socials</a>
+                <a href="#admins" class="text-gray-600 hover:text-secondary-blue transition duration-200">Admins</a>
+            </div>
+            <div class="lg:hidden">
+                <button class="text-primary-blue focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-      <div class="hidden md:flex gap-6 text-sm">
-        <a href="#about" class="hover:text-sky-600">About</a>
-        <a href="#guidelines" class="hover:text-sky-600">Guidelines</a>
-        <a href="#guide" class="hover:text-sky-600">Study Guide</a>
-        <a href="#join" class="hover:text-sky-600">Join</a>
-        <a href="#admins" class="hover:text-sky-600">Admins</a>
-      </div>
-    </nav>
-  </header>
+    <main>
+        <section id="hero" class="bg-gradient-to-r from-bg-gradient-start to-bg-gradient-end text-white py-24 sm:py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight mb-4 animate-fadeIn">
+                    France Telugu Students
+                </h1>
+                <p class="text-xl sm:text-2xl font-light max-w-3xl mx-auto mb-10 opacity-90">
+                    Your **trusted community** and **essential resource** for Telugu students studying, or planning to study, in France.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="px-8 py-3 bg-secondary-blue hover:bg-opacity-90 text-white font-semibold rounded-lg shadow-xl transition duration-300 transform hover:scale-105">
+                        <span class="mr-2">📲</span> Join WhatsApp Group
+                    </a>
+                    <a href="#guide" class="px-8 py-3 bg-white text-primary-blue hover:bg-gray-100 font-semibold rounded-lg shadow-xl transition duration-300 transform hover:scale-105">
+                        <span class="mr-2">📚</span> View France Study Guide
+                    </a>
+                </div>
+            </div>
+        </section>
 
-  <section class="bg-gradient-to-br from-sky-50 via-slate-50 to-purple-50 border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-10 items-center">
-      <div>
-        <p class="text-xs text-sky-600 uppercase font-semibold">Community</p>
-        <h1 class="text-4xl font-bold mt-2">Welcome to <span class="text-sky-600">France Telugu Students</span></h1>
-        <p class="text-slate-600 mt-4 text-sm">A community for Telugu students in France — helping with applications, visas, accommodation, and job search.</p>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-        <div class="mt-6 flex gap-3">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6NbQXOzxFu58LMz6o_yK2gn1atxH4vPn7AZqptz0-fj2I2w/viewform"
-             target="_blank"
-             class="px-5 py-2.5 bg-sky-600 text-white rounded-full hover:bg-sky-500 text-sm">
-            Join WhatsApp Group
-          </a>
-          <a href="#guide" class="px-5 py-2.5 border border-sky-300 rounded-full text-sky-700 bg-white text-sm hover:border-sky-500">
-            View Study Guide
-          </a>
+            <section id="about" class="mb-16">
+                <h2 class="text-3xl font-bold text-primary-blue mb-6 border-b-2 pb-2 border-secondary-blue">
+                    🌍 About the France Telugu Students Group
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 text-lg">
+                    <div>
+                        <p class="mb-4">
+                            The **France Telugu Students** community was founded to support students, primarily from India's Telugu-speaking regions, who are navigating the journey of studying in France. We understand the unique challenges of relocating across continents, from application stress to settling into a new culture.
+                        </p>
+                        <p class="mb-4">
+                            Our primary **purpose** is to provide accurate, timely information, share personal experiences, and foster a supportive network. We aim to ease the transition for new students and help existing students thrive academically and socially.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="mb-4">
+                            This community is an essential resource for both **current students** in France and **abroad aspirants** planning their move. Whether you need advice on visa interviews, finding accommodation, or simply want to connect with others who speak your language, you'll find your home here.
+                        </p>
+                        <p class="p-4 bg-secondary-blue/10 border-l-4 border-secondary-blue rounded-r-lg shadow-sm">
+                            **We believe in peer-to-peer support.** Our group is a platform for students, run by students, ensuring the advice you get is practical and grounded in real-life French student experiences.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-16 border-gray-200">
+
+            <section id="guidelines" class="mb-16">
+                <h2 class="text-3xl font-bold text-primary-blue mb-6 border-b-2 pb-2 border-secondary-blue">
+                    📜 Group Guidelines: Our Community Code of Conduct
+                </h2>
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-100">
+                    <ol class="space-y-4 list-decimal list-inside text-lg">
+                        <li class="font-semibold text-gray-700">
+                            **Be Respectful:** Treat all members with courtesy. Abusive language, trolling, or personal attacks are strictly prohibited.
+                        </li>
+                        <li class="font-semibold text-gray-700">
+                            **Stay Relevant:** Keep discussions focused on studying in France, student life, visas, or related topics. Avoid non-relevant forwarding, memes, or unsolicited advertisements.
+                        </li>
+                        <li class="font-semibold text-gray-700">
+                            **Protect Privacy:** Do not share personal information of other members without their explicit consent.
+                        </li>
+                        <li class="font-semibold text-gray-700">
+                            **No Illegal Activities:** Do not discuss or promote any illegal activities, including unauthorized immigration practices or fraudulent document preparation.
+                        </li>
+                        <li class="font-semibold text-gray-700">
+                            **Avoid Unverified Information:** Share only verified, factual information, especially regarding official processes (visa, applications). State clearly when you are sharing personal opinion or experience.
+                        </li>
+                        <li class="font-semibold text-gray-700">
+                            **Respect Admins:** Follow directions and decisions made by the group administrators. They are here to maintain order and helpfulness.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <hr class="my-16 border-gray-200">
+
+            <section id="guide" class="mb-16">
+                <h2 class="text-3xl font-bold text-primary-blue mb-8 border-b-2 pb-2 border-secondary-blue">
+                    🧭 Essential Guide for Indian Students Coming to France
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-blue">
+                        <h3 class="text-xl font-bold text-primary-blue mb-3">1. Foundational Steps</h3>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                            <li>**Passport:** Ensure your passport is valid and won't expire during your stay.</li>
+                            <li>**Choosing Course:** Research and finalize your university and program of study.</li>
+                            <li>**Exams:** Complete necessary English proficiency (IELTS/TOEFL) and any required aptitude tests.</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-blue">
+                        <h3 class="text-xl font-bold text-primary-blue mb-3">2. Applications & Admissions</h3>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                            <li>**Documents:** Prepare academic transcripts, LORs, SOPs, and CVs.</li>
+                            <li>**Applications:** Submit applications to universities (often via Campus France).</li>
+                            <li>**Admission Letter:** Secure your official Letter of Acceptance (LOA).</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-blue">
+                        <h3 class="text-xl font-bold text-primary-blue mb-3">3. Visa & Finances</h3>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                            <li>**Visa Process:** Complete Campus France interview and submit your VFS Global application.</li>
+                            <li>**Financial Prep:** Arrange blocked account (attestation), proof of funds, and tuition fee payments.</li>
+                            <li>**Insurance:** Secure mandatory student health insurance (Campus France/private).</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-blue">
+                        <h3 class="text-xl font-bold text-primary-blue mb-3">4. Travel & Arrival</h3>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                            <li>**Flight & Packing:** Book your one-way ticket and pack essentials (clothes, adapter, limited food).</li>
+                            <li>**Accommodation:** Finalize student housing or temporary stay arrangements before flying.</li>
+                            <li>**First Week:** Validate your visa (online or in prefecture) and register at your university.</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-blue">
+                        <h3 class="text-xl font-bold text-primary-blue mb-3">5. Settling In & Resources</h3>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                            <li>**Jobs (Student):** Learn regulations for part-time work (964 hours/year).</li>
+                            <li>**Essential Apps:** Download RATP, VTC (Uber/Bolt), banking, and translation apps.</li>
+                            <li>**Emergency Contacts:** Keep police (17), ambulance (15), and fire (18) numbers handy.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="p-6 bg-primary-blue text-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-white">
+                        <h3 class="text-xl font-bold mb-3">6. Final Checklist</h3>
+                        <p class="font-light mb-3">
+                            <span class="font-bold">Before Departure:</span> Original documents, flight ticket, proof of accommodation, minimum cash.
+                        </p>
+                        <p class="font-light">
+                            <span class="font-bold">First Month:</span> Open a French bank account (e.g., LCL, BNP), apply for CAF (housing aid), and get a SIM card.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="my-16 border-gray-200">
+
+            <section id="join" class="mb-16">
+                <h2 class="text-3xl font-bold text-primary-blue mb-8 border-b-2 pb-2 border-secondary-blue">
+                    🤝 Join the Community & Connect with Us
+                </h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <div class="p-6 bg-green-500 text-white rounded-xl shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold mb-2">WhatsApp Group</h3>
+                        <p class="mb-4">Instant support and discussion.</p>
+                        <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="inline-block bg-white text-green-600 font-semibold py-2 px-4 rounded-full hover:bg-gray-100">
+                            Request Invite Link
+                        </a>
+                    </div>
+
+                    <div class="p-6 bg-pink-500 text-white rounded-xl shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Instagram</h3>
+                        <p class="mb-4">Follow student life in France.</p>
+                        <a href="#" target="_blank" class="inline-block bg-white text-pink-600 font-semibold py-2 px-4 rounded-full hover:bg-gray-100">
+                            @France Telugodu & Paris_lo_teluguabbayi
+                        </a>
+                    </div>
+
+                    <div class="p-6 bg-red-600 text-white rounded-xl shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold mb-2">YouTube</h3>
+                        <p class="mb-4">Video guides and vlogs.</p>
+                        <a href="https://www.youtube.com/@francelotelugodu" target="_blank" class="inline-block bg-white text-red-600 font-semibold py-2 px-4 rounded-full hover:bg-gray-100">
+                            Subscribe @francelotelugodu
+                        </a>
+                    </div>
+
+                    <div class="p-6 bg-primary-blue text-white rounded-xl shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Official Site</h3>
+                        <p class="mb-4">Check for permanent resources.</p>
+                        <a href="http://franceteluguodu.com" target="_blank" class="inline-block bg-white text-primary-blue font-semibold py-2 px-4 rounded-full hover:bg-gray-100">
+                            Visit franceteluguodu.com
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="my-16 border-gray-200">
+
+            <section id="admins" class="mb-16">
+                <h2 class="text-3xl font-bold text-primary-blue mb-8 border-b-2 pb-2 border-secondary-blue">
+                    🧑‍💻 Admins & Official Contact
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg border border-primary-blue/20 text-center">
+                        <h3 class="text-2xl font-bold text-primary-blue mb-2">Abhilash Reddy</h3>
+                        <p class="text-gray-600 mb-4">Community Founder/Admin</p>
+                        <a href="https://wa.me/33775849309" target="_blank" class="inline-flex items-center text-secondary-blue hover:text-primary-blue font-medium">
+                            <span class="mr-1">💬</span> WhatsApp: +33 775849309
+                        </a>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg border border-primary-blue/20 text-center">
+                        <h3 class="text-2xl font-bold text-primary-blue mb-2">Paris_lo_teluguabbayi</h3>
+                        <p class="text-gray-600 mb-4">Official Social Media Manager</p>
+                        <a href="https://wa.me/33745719734" target="_blank" class="inline-flex items-center text-secondary-blue hover:text-primary-blue font-medium">
+                            <span class="mr-1">💬</span> WhatsApp: +33 745719734
+                        </a>
+                    </div>
+
+                    <div class="p-6 bg-primary-blue text-white rounded-xl shadow-lg border border-white/20 text-center flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-2">Official Email</h3>
+                        <p class="text-lg font-light mb-4">For official inquiries and collaborations.</p>
+                        <a href="mailto:franceteluguodu8970@gmail.com" class="inline-flex items-center justify-center bg-white text-primary-blue font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
+                            ✉️ franceteluguodu8970@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </section>
+
         </div>
-      </div>
+    </main>
 
-      <div class="bg-white rounded-3xl shadow p-6 border border-slate-100">
-        <h2 class="text-sm font-semibold text-slate-900">What you’ll find here</h2>
-        <ul class="mt-3 text-sm text-slate-600 space-y-1">
-          <li>🎓 University applications & visa help</li>
-          <li>🏠 Accommodation tips</li>
-          <li>💶 Scholarships guidance</li>
-          <li>💼 Part-time jobs & networking</li>
-          <li>🌍 Life in France</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-3xl font-semibold">About the Group</h2>
-    <p class="mt-3 text-slate-600 text-sm">A helpful community made by Telugu students studying their Master’s in France.</p>
-  </section>
-
-  <section id="guidelines" class="bg-white border-y border-slate-200 py-14">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold">Guidelines</h2>
-      <ol class="mt-5 text-sm text-slate-700 space-y-2">
-        <li>1. Be respectful</li>
-        <li>2. No spam</li>
-        <li>3. No politics</li>
-        <li>4. Share genuine accommodation posts</li>
-        <li>5. No abusive language</li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="guide" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-3xl font-semibold">Study Guide</h2>
-    <p class="text-slate-600 text-sm mt-2">Step-by-step help for students coming from India to France.</p>
-  </section>
-
-  <section id="join" class="bg-white border-y border-slate-200 py-14">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold">Join the Community</h2>
-      <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-5 text-sm">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6NbQXOzxFu58LMz6o_yK2gn1atxH4vPn7AZqptz0-fj2I2w/viewform"
-           class="p-4 bg-emerald-50 border border-emerald-200 rounded-xl">
-          WhatsApp Group
-        </a>
-        <a href="https://www.instagram.com/france_telugodu" class="p-4 bg-pink-50 border border-pink-200 rounded-xl">
-          Instagram
-        </a>
-        <a href="https://www.youtube.com/@francelotelugodu" class="p-4 bg-red-50 border border-red-200 rounded-xl">
-          YouTube
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="admins" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-3xl font-semibold">Admins</h2>
-    <div class="mt-6 grid sm:grid-cols-2 gap-5 text-sm">
-      <div class="bg-white border p-4 rounded-xl">Abhilash Reddy — +33 7 75 84 93 09</div>
-      <div class="bg-white border p-4 rounded-xl">Paris_lo_teluguabbayi — +33 7 45 71 97 34</div>
-    </div>
-  </section>
-
-  <footer class="border-t border-slate-200 text-center py-5 text-xs text-slate-500">
-    © France Telugu Students · Made by students, for students
-  </footer>
+    <footer class="bg-primary-blue text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">
+                &copy; France Telugu Students · Made by students, for students.
+            </p>
+        </div>
+    </footer>
 
 </body>
 </html>
-
